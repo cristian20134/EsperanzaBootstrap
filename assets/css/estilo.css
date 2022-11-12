@@ -3,6 +3,21 @@
 }
 
 .carrusel-index{
-    height: 500px;
+    height: 450px;
+}
+
+.carrusel-index img{
+    opacity: 0.5;
+}
+
+.bg-jumbotron{
+    background-image: url(../img/carrusel3.jpg);
+    background-size: cover;
+    background-position: 40%;
+    height: 450px;
+}
+
+.bg-jumbotron p{
+    text-align: justify;
 }
 
