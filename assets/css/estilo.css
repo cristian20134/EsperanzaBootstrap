@@ -3,18 +3,27 @@
 }
 
 .carrusel-index{
-    height: 450px;
+    height: 500px;
 }
 
 .card-img{
     height: 400px;
 }
 
-.bg-jumbotron{
-    background-image: url(../img/carrusel3.jpg);
+.bg-nosotros{
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(../img/carrusel2.jpg);
     background-size: cover;
-    background-position: 40%;
-    height: 450px;
+    background-position: center;
+    background-attachment: fixed;
+    height: 500px;
+}
+
+.bg-jumbotron{
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(../img/carrusel3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 500px;
 }
 
 .bg-jumbotron p{
@@ -22,10 +31,26 @@
 }
 
 .footer-color{
-    background: #5499C7;
+    background: #5e93b6;
 }
 .footer-img{
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
+}
+
+.bg-main{
+    background: #EBF5FB;
+}
+.parrafo-main{
+    text-align:justify;
+}
+
+/*Formulario*/
+.bg-contacto{
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(../img/carrusel1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
 }
 
