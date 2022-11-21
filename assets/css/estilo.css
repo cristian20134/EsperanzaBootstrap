@@ -1,14 +1,34 @@
+/*index-*/
+/*menu*/
 .nav-color{
     background: #1e577c;
 }
 
+/*carrusel*/
 .carrusel-index{
     height: 500px;
 }
 
+/*card*/
 .card-img{
     height: 400px;
 }
+
+/*Footer*/
+
+.footer-color{
+    background: #5e93b6;
+}
+.footer-img{
+    width: 150px;
+    height: 150px;
+}
+
+ .nav-footer h5, .nav-footer a{
+    color: white;
+}
+
+/*Pagina Nosotros*/
 
 .bg-nosotros{
     background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(../img/carrusel2.jpg);
@@ -18,6 +38,7 @@
     height: 500px;
 }
 
+/*Pagina Campaña*/
 .bg-jumbotron{
     background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(../img/carrusel3.jpg);
     background-size: cover;
@@ -26,26 +47,15 @@
     height: 500px;
 }
 
-.bg-jumbotron p{
-    text-align: justify;
-}
-
-.footer-color{
-    background: #5e93b6;
-}
-.footer-img{
-    width: 180px;
-    height: 180px;
-}
-
 .bg-main{
     background: #EBF5FB;
 }
+
 .parrafo-main{
     text-align:justify;
 }
 
-/*Formulario*/
+/*Contacto Formulario*/
 .bg-contacto{
     background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(../img/carrusel1.jpg);
     background-size: cover;
@@ -53,4 +63,9 @@
     background-attachment: fixed;
     height: 100vh;
 }
+
+.img-album{
+    height: 225px;
+}
+
 
