@@ -1,3 +1,7 @@
+body{
+    font-family: 'Noto Serif', serif;
+}
+
 /*index-*/
 /*menu*/
 .nav-color{
@@ -6,7 +10,7 @@
 
 /*carrusel*/
 .carrusel-index{
-    height: 500px;
+    height: 400px;
 }
 
 /*card*/
@@ -38,7 +42,7 @@
     height: 500px;
 }
 
-/*Pagina Campaña*/
+/*Pagina Campaña lata*/
 .bg-jumbotron{
     background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(../img/carrusel3.jpg);
     background-size: cover;
@@ -55,17 +59,54 @@
     text-align:justify;
 }
 
+/*Pagina Campaña adopta*/
+.bg-viejito{
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(../img/card-index2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 500px;
+}
+
+/*Efecto Imagenes Hover (campaña adopta)*/
+.imgHover img{
+    transition: all 1.3s ease;
+}
+
+.imgHover:hover img{
+    transform: scale(1.2);
+}
+
+
+/*Pagina Campaña comida*/
+.bg-comida{
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(../img/card-index3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 500px;
+}
+
+/*Efecto Imagenes Hover (campaña comida)*/
+.img-hover{
+    overflow: hidden;
+}
+
+.img-hover img{
+    transition: all 1.3s ease;
+}
+
+.img-hover:hover img{
+    transform: scale(1.2);
+}
+
 /*Contacto Formulario*/
 .bg-contacto{
-    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(../img/carrusel1.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(../img/formulario1.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     height: 100vh;
-}
-
-.img-album{
-    height: 225px;
 }
 
 
