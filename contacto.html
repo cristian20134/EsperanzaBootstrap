@@ -5,40 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Esperanza</title>
+
+    <!--logo ico-->
     <link rel="shortcut icon" href="assets/ico/logo.ico" type="image/x-icon">
+
+    <!--bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/estilo.css">
+
+    <!--bootstrap iconos-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.1/font/bootstrap-icons.css">
+
+    <!--css-->
+    <link rel="stylesheet" href="assets/css/estilo.css">
+    
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container-fluid m-0 p-0">
+      <header>
         <!--Menu--> 
         <nav class="navbar navbar-expand-lg navbar-dark nav-color">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="index.html"><img src="assets/img/logoesperanza.png" alt="" width="65" height="55"> Fundación Esperanza y Protección Animal</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html"><i class="bi bi-house" style="font-size: 18px;"></i></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="nosotros.html">Nosotros</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="campana.html">Campaña</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">Contacto</a>
-                  </li>
-                </ul>
-              </div>
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="assets/img/logoesperanza.png" alt="" width="65" height="55"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Campañas
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark nav-color">
+                    <li><a class="dropdown-item text-light" href="campana_lata.html">Que no te dé lata</a></li>
+                    <li><a class="dropdown-item" href="campana_adopta.html">Adopta un Viejito</a></li>
+                    <li><a class="dropdown-item" href="campaña_comida.html">Donación de Comida</a></li>                
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+              </ul>
             </div>
-          </nav>
+          </div>
+        </nav>
+      </header>
 
-          <!--Formulario-->
+      <!--Formulario-->
+      <form action="">
         <div class="container-fluid">
           <div class="row justify-content-center align-items-center bg-contacto">
             <div class="col-11 col-md-6 text-light fw-bold border border-2 border-white rounded">
@@ -54,8 +78,8 @@
                 <input type="text" class="form-control bg-light" id="exampleFormControlInput1" placeholder="+56 9 87654321">
               </div>
               <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Correo Electronico</label>
-                <input type="email" class="form-control bg-light" id="exampleFormControlInput1" placeholder="name@example.com">
+                <label for="exampleFormControlInput1" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control bg-light" id="exampleFormControlInput1" placeholder="nombre@gmail.com">
               </div>
               <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
@@ -67,8 +91,10 @@
             </div>
           </div>
         </div>
+      </form>
 
-        <!--Footer-->
+      <!--Footer-->
+      <footer>
         <div class="container-fluid footer-color py-1">
           <div class="row">
             <div class="col-12 col-md-4 mt-5 text-center">
@@ -79,16 +105,25 @@
               <ul class="nav flex-column p-3">
                 <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0">Inicio</a></li>
                 <li class="nav-item mb-2"><a href="nosotros.html" class="nav-link p-0">Nosotros</a></li>
-                <li class="nav-item mb-2"><a href="campana.html" class="nav-link p-0">Campaña</a></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Campañas
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark footer-color">
+                    <li><a class="dropdown-item" href="campana_lata.html">Que no te dé lata</a></li>
+                    <li><a class="dropdown-item" href="campana_adopta.html">Adopta un Viejito</a></li>
+                    <li><a class="dropdown-item" href="campaña_comida.html">Donación de Comida</a></li>                
+                  </ul>
+                </li>
                 <li class="nav-item mb-2"><a href="contacto.html" class="nav-link p-0">Contacto</a></li>
               </ul>
             </div>
             <div class="col-12 col-md-4 mt-5 text-center nav-footer">
               <h5>Redes Sociales</h5>
               <ul class="nav flex-column p-3">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0"><i class="bi bi-facebook"></i></a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0"><i class="bi bi-instagram"></i></a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0"><i class="bi bi-whatsapp"></i></a></li>
+                <li class="nav-item mb-2"><a href="https://www.facebook.com/profile.php?id=100064427125773&mibextid=ZbWKwL" target="_blank" class="nav-link p-0"><i class="bi bi-facebook"></i></a></li>
+                <li class="nav-item mb-2"><a href="https://instagram.com/f.esperanza_yproteccion_animal?igshid=YmMyMTA2M2Y=" target="_blank" class="nav-link p-0"><i class="bi bi-instagram"></i></a></li>
+                <li class="nav-item mb-2"><a href="https://wa.link/4d3kla" target="_blank" class="nav-link p-0"><i class="bi bi-whatsapp"></i></a></li>
               </ul>
             </div>
           </div>
@@ -96,6 +131,7 @@
             <p class="text-light">&copy; 2022 Fundación Esperanza y Protección Animal / Todos los derechos reservados.</p>
           </div>
         </div>
+      </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
