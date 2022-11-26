@@ -62,7 +62,7 @@
       </header>
 
       <!--Formulario-->
-      <form action="">
+      <form name="contact" method="POST" data-netlify-recaptcha="true" action="#">
         <div class="container-fluid">
           <div class="row justify-content-center align-items-center bg-contacto">
             <div class="col-11 col-md-6 text-light fw-bold border border-2 border-white rounded">
@@ -71,22 +71,23 @@
               </div>
               <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label ">Nombre</label>
-                <input type="text" class="form-control bg-light" id="exampleFormControlInput1" placeholder="Ingrese su Nombre">
+                <input type="text" name="name" class="form-control bg-light" id="name" placeholder="Ingrese su Nombre">
               </div> 
               <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Teléfono</label>
-                <input type="text" class="form-control bg-light" id="exampleFormControlInput1" placeholder="+56 9 87654321">
+                <input type="text" name="phone" class="form-control bg-light" id="phone" placeholder="+56 9 87654321">
               </div>
               <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Correo Electrónico</label>
-                <input type="email" class="form-control bg-light" id="exampleFormControlInput1" placeholder="nombre@gmail.com">
+                <input type="email" name="email" class="form-control bg-light" id="email" placeholder="nombre@gmail.com">
               </div>
               <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-                <textarea class="form-control bg-light" id="exampleFormControlTextarea1" rows="3" placeholder="Escriba su mensaje"></textarea>
+                <textarea class="form-control bg-light" name="message" id="message" rows="3" placeholder="Escriba su mensaje"></textarea>
               </div>
+              <div data-netlify-recaptcha="true"></div>
               <div class="text-center mb-3">
-                <button type="button" class="btn btn-primary w-25">Enviar</button>
+                <button type="submit" class="btn btn-primary w-25">Enviar</button>
               </div>
             </div>
           </div>
