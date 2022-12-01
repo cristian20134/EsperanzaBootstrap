@@ -10,7 +10,7 @@ body{
 
 /*carrusel*/
 .carrusel-index{
-    height: 410px;
+    height: 450px;
 }
 
 /*card*/
@@ -76,7 +76,6 @@ body{
 .imgHover:hover img{
     transform: scale(1.2);
 }
-
 
 /*Pagina Campaña comida*/
 .bg-comida{
